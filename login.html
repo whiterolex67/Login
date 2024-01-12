@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href = "index.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <title>Login Page</title>
+</head>
+<body>
+    <div id = "login-component">
+     <div>
+        <h1>LOGIN</h1>
+    </div>
+     <div>
+        <input placeholder="Email" type="text" name="" id="login-email">
+        <span id ="email-error" style = "display:none;color:red">*Please enter email*</span>
+        <span id ="register-error" style = "display:none;color:red">*Email Id Not Registered*</span>
+      </div>
+     <div>
+        <input placeholder="password" type="password" name="" id="login-password">
+        <span id ="password-error" style = "display:none;color:red">*Please enter password*</span>
+        <span id ="wrong-password-error" style = "display:none;color:red">*Wrong Password*</span>
+    </div>
+     <div><button onclick="Login()" type = "button" id = "login-button">Login</button></div>
+     <div id = "loader-login"></div>
+</div>
+    <div>
+        <h1 id = "login-success" style = "color:green;display:none">LOGIN SUCCESSFUL !!</h1>
+    </div>
+ <script src = "/index.js"></script>
+</body>
+</html>

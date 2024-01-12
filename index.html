@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link href = "index.css" rel = "stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+    <div id = "Application">
+          <div>
+             <h1>CREATE AN ACCOUNT</h1>
+           <div>
+           <div class = "inputField">
+             <input autocomplete="off" id = "name" type="text" placeholder = "Enter Your Name">
+             <span id ="nameError" style = "display:none;color:red">*Please enter name*</span>
+             <span class ="tooltip">Please fill This Field</span>
+          </div>
+          <div class = "inputField">
+            <input autocomplete="off" type="text" id="email" placeholder="Enter Your Email ID">
+            <span id ="emailTypeError" style = "display:none;color:red">*Please give valid Email*</span>
+            <span id ="emailError" style = "display:none;color:red">*Please enter Email ID*</span>
+            <span id ="dataError" style = "display:none;color:red">*Email Already used please proceed to login*</span>
+            <span class ="tooltip">Please fill This Field</span>
+          </div>
+          <div class = "inputField">
+            <input autocomplete="off" type="text" name="" id="contact" placeholder="Enter Your Contact Number">
+            <span id ="contactError" style = "display:none;color:red">*Please enter Contact*</span>
+            <span id ="contactTypeError" style = "display:none;color:red">*Please enter only numbers*</span>
+            <span id ="contactSizeError" style = "display:none;color:red">*Please enter valid 10 digit mobile number*</span>
+            <span class ="tooltip">Please fill This Field</span>
+          </div>
+          <div class = "inputField">
+            <input type="password" name="" id="password" placeholder = "Enter Your Password">
+            <span id ="passwordError" style = "display:none;color:red">*Please enter Password*</span>
+            <span id ="passwordSizeError" style = "display:none;color:red">*Password should be atleast 8 characters*</span>
+            <span class ="tooltip">Please fill This Field</span>
+          </div>
+          <div class = "inputField">
+            <input type="password" name="" id="confirmpass" placeholder = "Confirm Password">
+            <span id ="confirmpassError" style = "display:none;color:red">*Please Confirm Password*</span>
+            <span id ="passwordTypeError" style = "display:none;color:red">*Password's Doesn't Match*</span>
+            <span class ="tooltip">Please fill This Field</span>
+          </div>
+          <div>
+            <button onclick="submitForm()" id = "submitButton" type="submit">Submit</button>
+          </div>
+          <div id = "Login">
+            <div><a id = "haveaccount" href = "#">Already have an account ?</a></div>
+            <div><a href = "./login.html" id = "loginbutton">Login</a></div>
+          <div>
+            <div id = "register-success" style = "color:green;display:none;"><h1>Registration successful</h1></div>
+            <div id = "loader"></div>
+    </div>
+<script src = "index.js"></script>
+</body>
+</html>
